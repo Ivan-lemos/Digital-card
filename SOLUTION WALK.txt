@@ -1,0 +1,56 @@
+Solution and Walkthrough for the Name Card Final Project
+Setting Up the Project Template
+Let's begin by downloading the project template from the website. Once downloaded, unzip the file to access all the included files.
+
+I have already set up my Flask server, which is straightforward at this point. I created the app, set up the home routes, and configured the app to run in debug mode.
+
+Next, I need to create the necessary directories for the project. Specifically, I will create a directory called templates and another called static.
+
+With these two folders in place, I can start moving the relevant files. The index.html file goes into the templates folder, while the assets and images folders go into the static directory.
+
+Running the Server and Initial Rendering
+One of the first things we will do is start the server and try to render the index.html page. If you have another project running on the same server address, you might encounter an error stating "address already in use." Make sure to stop any other running servers before proceeding.
+
+After starting the server, the webpage will display the HTML content. At this point, it is very simple and lacks styling or images.
+
+Fixing Asset Paths in HTML
+We need to fix the file paths in index.html because the downloaded template had two folders, assets and images, which are now both inside the static folder. Therefore, all references to assets should be changed to static/assets, and similarly for images to static/images.
+
+After updating these paths, save the file and refresh the webpage. If you see the CSS file from a previous project being rendered, this is due to browser caching of static files. To load the new static files, perform a hard reload by holding down Shift and clicking the refresh button.
+
+Editing Text and Links
+Now that the styles are loading correctly, we can edit the text and links in the webpage. For example, the main heading (h1) can be changed easily. You can also update the social media links by copying your Twitter, Instagram, or Facebook URLs and replacing the href attributes accordingly.
+
+Remember to attribute the source of the template since it was not purchased but used for personal purposes. You can leave the footer attribution as is or modify it appropriately.
+
+Fixing Image Paths and Replacing Avatar
+If the avatar image disappears after editing, it might be due to missing a trailing slash in the file path during the find-and-replace process. Adding the correct trailing slash will restore the image rendering.
+
+Currently, the avatar image is a blank gradient image inside the images folder. You can replace it with your own image by moving your image file into the images folder and updating the file path in index.html accordingly.
+
+After deleting the old avatar image and saving the changes, refresh the website to see your photo displayed.
+
+Adding a Background Image
+To add a background image beneath the gradient, a great resource for free commercial-use images is Unsplash. You can search for images such as beaches or seas and download high-definition photos.
+
+I chose a picture of the seashore and downloaded the large JPEG image. Then, I renamed the downloaded image to match the original background image name, which is bg.jpeg.
+
+Replace the original background image file with your new image. The background image is rendered via the CSS file, specifically in main.css, where a gradient overlays an image named bg.jpeg from the images folder.
+
+After replacing the image, reload the website with a hard refresh (Shift + Reload) to see the new background image behind the gradient.
+
+Final Customizations
+The last step is to change the page title to display your name instead of placeholder text. After updating the title and saving, the website will serve a beautiful customized page based on the template.
+
+This project demonstrates how to use an existing template and customize it using knowledge of HTML, CSS, and Python Flask servers to create a personalized website.
+
+I encourage you to explore other templates and experiment with them to build your own custom websites.
+
+Key Takeaways
+Downloaded and set up the project template with Flask server.
+Organized project directories into templates and static for HTML and assets.
+Updated file paths in HTML to correctly reference static assets.
+Replaced placeholder images and background with custom images.
+Customized text content and links to personalize the website.
+Used browser hard reload to clear cached static files and view updates.
+Demonstrated how to customize a template using HTML, CSS, and Python Flask server.
